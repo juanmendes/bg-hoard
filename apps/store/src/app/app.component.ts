@@ -14,6 +14,6 @@ export class AppComponent {
   title = 'Board Game Hoard';
   games = this.http.get<Game[]>('/api/games');
   constructor(private http: HttpClient) {
-    console.log("component constructed");
+    console.log("component constructed and changes");
   }
 }
