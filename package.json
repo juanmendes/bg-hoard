@@ -9,6 +9,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cdk": "^14.2.5",
+    "@angular/material": "^14.2.5",
     "@nrwl/angular": "^15.0.0"
   },
   "devDependencies": {
