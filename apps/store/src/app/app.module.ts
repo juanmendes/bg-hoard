@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { appRoutes } from './app.routes';
-import {StoreUiSharedModule} from "@bg-hoard/store/ui-shared";
+import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -14,7 +14,8 @@ import {StoreUiSharedModule} from "@bg-hoard/store/ui-shared";
     BrowserModule,
     MatCardModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
-    StoreUiSharedModule
+    HttpClientModule,
+    StoreUiSharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
