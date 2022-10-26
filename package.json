@@ -24,6 +24,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nrwl/angular": "^15.0.0",
     "@nrwl/nest": "^15.0.3",
+    "@nrwl/nx-plugin": "^15.0.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.0.0",
     "tslib": "^2.3.0",

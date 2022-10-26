@@ -2553,6 +2553,19 @@
     chalk "4.1.0"
     tslib "^2.3.0"
 
+"@nrwl/nx-plugin@^15.0.3":
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/nx-plugin/-/nx-plugin-15.0.3.tgz#5ac5710fea8a4dace0d36c3dc4da927c9fd9f489"
+  integrity sha512-Qu0aH2wRHK3FzSavGMeCGrrAyE0EnMX6U+bI4rpPaLUuZdo1wZuAaSloueLjCxsO6xRUiTVXyGSMt0gpL3BMhg==
+  dependencies:
+    "@nrwl/devkit" "15.0.3"
+    "@nrwl/jest" "15.0.3"
+    "@nrwl/js" "15.0.3"
+    "@nrwl/linter" "15.0.3"
+    dotenv "~10.0.0"
+    fs-extra "^10.1.0"
+    tslib "^2.3.0"
+
 "@nrwl/storybook@15.0.0":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-15.0.0.tgz#f86e14999042adedaeaaf8481737e5553f3e0ca8"
