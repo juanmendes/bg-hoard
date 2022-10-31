@@ -1,0 +1,43 @@
+{
+  "name": "store-footer2",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/store/footer2/src",
+  "prefix": "bg-hoard",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/store/footer2/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/store/footer2/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/store/footer2/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/store/footer2/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/store/footer2/**/*.ts",
+          "libs/store/footer2/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
